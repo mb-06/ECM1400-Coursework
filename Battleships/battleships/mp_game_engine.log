@@ -1,0 +1,41 @@
+2023-12-10 00:21:19 INFO mp_game_engine - ai_opponent_game_loop: ##### ai opponent game loop started #####
+2023-12-10 00:21:21 INFO components - initialise_board: Empty board has been created
+2023-12-10 00:21:21 INFO components - initialise_board: Empty board has been created
+2023-12-10 00:21:21 INFO components - create_battleships: Ship dictionary created
+2023-12-10 00:21:21 INFO components - create_battleships: Ship dictionary created
+2023-12-10 00:21:21 INFO components - place_battleships: Custom algorithm chosen
+2023-12-10 00:21:21 INFO components - place_battleships: Custom algorithm complete
+2023-12-10 00:21:21 INFO mp_game_engine - ai_opponent_game_loop: Slightly less easy chosen
+2023-12-10 00:21:21 INFO components - place_battleships: optimised algorithm chosen
+2023-12-10 00:21:21 INFO components - place_battleships: direction chose v
+2023-12-10 00:21:21 INFO components - place_battleships: Random point is (3, 3)
+2023-12-10 00:21:21 INFO components - place_battleships: optimised algorithm complete
+2023-12-10 00:21:21 INFO components - place_battleships: direction chose v
+2023-12-10 00:21:21 INFO components - place_battleships: Random point is (6, 3)
+2023-12-10 00:21:21 INFO components - place_battleships: Ships does not fit at starting point (6, 3) direction v
+2023-12-10 00:21:21 INFO components - place_battleships: Random point is (6, 5)
+2023-12-10 00:21:21 INFO components - place_battleships: optimised algorithm complete
+2023-12-10 00:21:21 INFO components - place_battleships: direction chose v
+2023-12-10 00:21:21 INFO components - place_battleships: Random point is (7, 3)
+2023-12-10 00:21:21 INFO components - place_battleships: Ships does not fit at starting point (7, 3) direction v
+2023-12-10 00:21:21 INFO components - place_battleships: Random point is (4, 1)
+2023-12-10 00:21:21 INFO components - place_battleships: optimised algorithm complete
+2023-12-10 00:21:21 INFO components - place_battleships: direction chose v
+2023-12-10 00:21:21 INFO components - place_battleships: Random point is (0, 4)
+2023-12-10 00:21:21 INFO components - place_battleships: optimised algorithm complete
+2023-12-10 00:21:21 INFO components - place_battleships: direction chose v
+2023-12-10 00:21:21 INFO components - place_battleships: Random point is (7, 1)
+2023-12-10 00:21:21 INFO components - place_battleships: Ships does not fit at starting point (7, 1) direction v
+2023-12-10 00:21:21 INFO components - place_battleships: Random point is (5, 3)
+2023-12-10 00:21:21 INFO components - place_battleships: Ships does not fit at starting point (5, 3) direction v
+2023-12-10 00:21:21 INFO components - place_battleships: Random point is (0, 0)
+2023-12-10 00:21:21 INFO components - place_battleships: optimised algorithm complete
+2023-12-10 00:21:21 INFO components - initialise_board: Empty board has been created
+2023-12-10 00:21:21 INFO mp_game_engine - ai_opponent_game_loop: ASCII board created
+2023-12-10 00:21:22 INFO game_engine - cli_coordinates_input: Two integers have been entered
+2023-12-10 00:21:22 INFO mp_game_engine - ai_opponent_game_loop: User has missed AI at (1, 1)
+2023-12-10 00:21:22 INFO mp_game_engine - generate_attack: Generating attack
+2023-12-10 00:21:22 INFO mp_game_engine - generate_attack: Attack generated
+2023-12-10 00:21:22 INFO mp_game_engine - ai_opponent_game_loop: AI has missed User at (8, 7)
+2023-12-10 00:21:24 INFO game_engine - cli_coordinates_input: q has been entered
+2023-12-10 00:21:24 INFO mp_game_engine - ai_opponent_game_loop: Game has been quit

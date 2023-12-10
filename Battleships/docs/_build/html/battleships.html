@@ -1,0 +1,256 @@
+
+
+<!doctype html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>battleships package &#8212; Battleships 0.01 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css?v=532c1bf3" />
+    
+    <script src="_static/documentation_options.js?v=6ca3c713"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="battleships" href="modules.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="battleships"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Battleships 0.01 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">battleships</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">battleships package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="battleships-package">
+<h1>battleships package<a class="headerlink" href="#battleships-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-battleships.components">
+<span id="battleships-components-module"></span><h2>battleships.components module<a class="headerlink" href="#module-battleships.components" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.components.create_battleships">
+<span class="sig-prename descclassname"><span class="pre">battleships.components.</span></span><span class="sig-name descname"><span class="pre">create_battleships</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'battleships.txt'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#battleships.components.create_battleships" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a dictionary for the size of the ships from
+provided text file.</p>
+<p>Args:
+filename : file to be read with ship information of format ship_name:size, default of battleships.txt</p>
+<p>Returns:
+ships_dict : Dictionary with ship types as keys and their sizes as values</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.components.initialise_board">
+<span class="sig-prename descclassname"><span class="pre">battleships.components.</span></span><span class="sig-name descname"><span class="pre">initialise_board</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#battleships.components.initialise_board" title="Link to this definition">¶</a></dt>
+<dd><p>Initialises a n by n board of None values,
+where n is the size</p>
+<p>Args:
+size : Size of the board (both dimensions), default size of 10.</p>
+<p>Returns:
+empty_board : List with n lists each with n inputs of None, whre n=size</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.components.place_battleships">
+<span class="sig-prename descclassname"><span class="pre">battleships.components.</span></span><span class="sig-name descname"><span class="pre">place_battleships</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">board</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ships</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">placement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'simple'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_json</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'placement.json'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#battleships.components.place_battleships" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a board with ships placed based on algorithm wanted</p>
+<p>Args:
+board : a list of list with none values
+ships : dictionary with key of ship name and value of ship size
+placement : string indicating what algorithm of placement to use, default of ‘simple’. Can take values ‘simple’,’random’,’custom’
+custom_json : string to indicate the use of a json file for the custom placement, default of ‘placement.json’</p>
+<p>Returns:
+board : the original board now with ships placed</p>
+</dd></dl>
+
+</section>
+<section id="module-battleships.game_engine">
+<span id="battleships-game-engine-module"></span><h2>battleships.game_engine module<a class="headerlink" href="#module-battleships.game_engine" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.game_engine.attack">
+<span class="sig-prename descclassname"><span class="pre">battleships.game_engine.</span></span><span class="sig-name descname"><span class="pre">attack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">board</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">battleships</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#battleships.game_engine.attack" title="Link to this definition">¶</a></dt>
+<dd><p>Will process an attack, saying if it hits a ship or not and updating
+the ship sizes accordingly</p>
+<p>Args:
+coordinates : A tuple with the row and column in form (x,y)
+board : list of lists representing the current board
+battleships : dictionary with key of ship name and value of ship size</p>
+<p>Returns:
+result : boolean. True means hit, False means miss.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.game_engine.cli_coordinates_input">
+<span class="sig-prename descclassname"><span class="pre">battleships.game_engine.</span></span><span class="sig-name descname"><span class="pre">cli_coordinates_input</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span></span></span><a class="headerlink" href="#battleships.game_engine.cli_coordinates_input" title="Link to this definition">¶</a></dt>
+<dd><p>Produces a tuple based on user inputted row and column values</p>
+<p>Returns:
+coordinate : tuple with first value indicating row inputted and second value indicating column inputted returns False if a string is entered, and None if q is entered</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.game_engine.simple_game_loop">
+<span class="sig-prename descclassname"><span class="pre">battleships.game_engine.</span></span><span class="sig-name descname"><span class="pre">simple_game_loop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#battleships.game_engine.simple_game_loop" title="Link to this definition">¶</a></dt>
+<dd><p>Runs a simple game of battleships, prompting the user to attack a simply generated board</p>
+</dd></dl>
+
+</section>
+<section id="module-battleships.main">
+<span id="battleships-main-module"></span><h2>battleships.main module<a class="headerlink" href="#module-battleships.main" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.main.placement_interface">
+<span class="sig-prename descclassname"><span class="pre">battleships.main.</span></span><span class="sig-name descname"><span class="pre">placement_interface</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#battleships.main.placement_interface" title="Link to this definition">¶</a></dt>
+<dd><p>Accept a post request containing the players board in the form of a config.json
+also accepts a get request which return placement.html template with a ships dictionary a baord size list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.main.process_attack">
+<span class="sig-prename descclassname"><span class="pre">battleships.main.</span></span><span class="sig-name descname"><span class="pre">process_attack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#battleships.main.process_attack" title="Link to this definition">¶</a></dt>
+<dd><p>Accepts a get request to get the coordinates to be attacked by the user. This then will run the game against
+the AI until someone wins</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.main.route">
+<span class="sig-prename descclassname"><span class="pre">battleships.main.</span></span><span class="sig-name descname"><span class="pre">route</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#battleships.main.route" title="Link to this definition">¶</a></dt>
+<dd><p>Accepts a get request to render template main.html with a player board list</p>
+</dd></dl>
+
+</section>
+<section id="module-battleships.mp_game_engine">
+<span id="battleships-mp-game-engine-module"></span><h2>battleships.mp_game_engine module<a class="headerlink" href="#module-battleships.mp_game_engine" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.mp_game_engine.ai_opponent_game_loop">
+<span class="sig-prename descclassname"><span class="pre">battleships.mp_game_engine.</span></span><span class="sig-name descname"><span class="pre">ai_opponent_game_loop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#battleships.mp_game_engine.ai_opponent_game_loop" title="Link to this definition">¶</a></dt>
+<dd><p>Runs a game of battleships against an AI opponent</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="battleships.mp_game_engine.generate_attack">
+<span class="sig-prename descclassname"><span class="pre">battleships.mp_game_engine.</span></span><span class="sig-name descname"><span class="pre">generate_attack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">board</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attacked_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span></span></span><a class="headerlink" href="#battleships.mp_game_engine.generate_attack" title="Link to this definition">¶</a></dt>
+<dd><p>‘
+Generates coordinates for a random attack on a given board</p>
+<p>Args:
+board : A list of lists representing the board that can be attacked
+attacked_points : A list with points that have already been attacked</p>
+<p>Returns :
+attack_coords : A tuple representing a coordinate to be attacked</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">battleships package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-battleships.components">battleships.components module</a><ul>
+<li><a class="reference internal" href="#battleships.components.create_battleships"><code class="docutils literal notranslate"><span class="pre">create_battleships()</span></code></a></li>
+<li><a class="reference internal" href="#battleships.components.initialise_board"><code class="docutils literal notranslate"><span class="pre">initialise_board()</span></code></a></li>
+<li><a class="reference internal" href="#battleships.components.place_battleships"><code class="docutils literal notranslate"><span class="pre">place_battleships()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-battleships.game_engine">battleships.game_engine module</a><ul>
+<li><a class="reference internal" href="#battleships.game_engine.attack"><code class="docutils literal notranslate"><span class="pre">attack()</span></code></a></li>
+<li><a class="reference internal" href="#battleships.game_engine.cli_coordinates_input"><code class="docutils literal notranslate"><span class="pre">cli_coordinates_input()</span></code></a></li>
+<li><a class="reference internal" href="#battleships.game_engine.simple_game_loop"><code class="docutils literal notranslate"><span class="pre">simple_game_loop()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-battleships.main">battleships.main module</a><ul>
+<li><a class="reference internal" href="#battleships.main.placement_interface"><code class="docutils literal notranslate"><span class="pre">placement_interface()</span></code></a></li>
+<li><a class="reference internal" href="#battleships.main.process_attack"><code class="docutils literal notranslate"><span class="pre">process_attack()</span></code></a></li>
+<li><a class="reference internal" href="#battleships.main.route"><code class="docutils literal notranslate"><span class="pre">route()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-battleships.mp_game_engine">battleships.mp_game_engine module</a><ul>
+<li><a class="reference internal" href="#battleships.mp_game_engine.ai_opponent_game_loop"><code class="docutils literal notranslate"><span class="pre">ai_opponent_game_loop()</span></code></a></li>
+<li><a class="reference internal" href="#battleships.mp_game_engine.generate_attack"><code class="docutils literal notranslate"><span class="pre">generate_attack()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="modules.html"
+                          title="previous chapter">battleships</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/battleships.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="battleships"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Battleships 0.01 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >battleships</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">battleships package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2023, Matthew Bright.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>
